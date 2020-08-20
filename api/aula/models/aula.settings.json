@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aulas",
+  "info": {
+    "name": "Aula"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "curso": {
+      "model": "curso",
+      "via": "aulas"
+    },
+    "professore": {
+      "model": "professore",
+      "via": "aulas"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "noticias",
+  "info": {
+    "name": "Noticia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "call": {
+      "type": "text"
+    }
+  }
+}

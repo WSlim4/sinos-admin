@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "name": "curso"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "aulas": {
+      "via": "curso",
+      "collection": "aula"
+    },
+    "categoria": {
+      "model": "categoria",
+      "via": "cursos"
+    }
+  }
+}

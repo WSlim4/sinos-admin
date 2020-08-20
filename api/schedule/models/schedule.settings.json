@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules",
+  "info": {
+    "name": "Schedule"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "projeto": {
+      "model": "projeto",
+      "via": "schedules"
+    },
+    "time": {
+      "type": "string"
+    }
+  }
+}

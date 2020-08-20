@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "categoria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "projeto": {
+      "model": "projeto",
+      "via": "categorias"
+    },
+    "cursos": {
+      "via": "categoria",
+      "collection": "curso"
+    }
+  }
+}

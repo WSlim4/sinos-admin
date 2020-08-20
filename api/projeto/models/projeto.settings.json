@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projetos",
+  "info": {
+    "name": "Projeto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "categorias": {
+      "via": "projeto",
+      "collection": "categoria"
+    },
+    "schedules": {
+      "via": "projeto",
+      "collection": "schedule"
+    }
+  }
+}
