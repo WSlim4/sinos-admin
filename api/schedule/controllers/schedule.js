@@ -5,4 +5,11 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+    find: ctx => {
+        return strapi.query('schedule').find(ctx.query, ['events', 'events.projeto']);
+      },
+    findOne: ctx => {
+        return strapi.query('schedule').findOne({ month: ctx.params.month }, ['events', 'events.projeto']);
+    }
+};

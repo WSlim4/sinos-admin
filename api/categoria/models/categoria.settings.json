@@ -24,8 +24,8 @@
       "required": false
     },
     "projeto": {
-      "model": "projeto",
-      "via": "categorias"
+      "via": "categorias",
+      "model": "projeto"
     },
     "cursos": {
       "via": "categoria",

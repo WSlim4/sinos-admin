@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_builders",
+  "info": {
+    "name": "Page Builder"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Meta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages.meta"
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "pages.meta",
+        "pages.rich-text",
+        "nested.slide"
+      ]
+    },
+    "page_id": {
+      "type": "string"
+    }
+  }
+}

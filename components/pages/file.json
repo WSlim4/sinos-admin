@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_pages_files",
+  "info": {
+    "name": "File",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "File": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Caption": {
+      "type": "string"
+    }
+  }
+}

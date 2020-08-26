@@ -9,21 +9,12 @@
     "timestamps": true
   },
   "attributes": {
-    "title": {
+    "month": {
       "type": "string"
     },
-    "text": {
-      "type": "text"
-    },
-    "date": {
-      "type": "date"
-    },
-    "projeto": {
-      "model": "projeto",
-      "via": "schedules"
-    },
-    "time": {
-      "type": "string"
+    "events": {
+      "via": "schedule",
+      "collection": "event"
     }
   }
 }

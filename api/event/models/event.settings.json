@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "projetos",
+  "collectionName": "events",
   "info": {
-    "name": "Projeto"
+    "name": "Event"
   },
   "options": {
     "increments": true,
@@ -12,20 +12,20 @@
     "title": {
       "type": "string"
     },
-    "color": {
-      "type": "string"
-    },
-    "intro": {
+    "text": {
       "type": "text"
     },
-    "description": {
-      "type": "text"
+    "schedule": {
+      "model": "schedule",
+      "via": "events"
     },
-    "categorias": {
-      "collection": "categoria",
-      "via": "projeto"
+    "projeto": {
+      "model": "projeto"
     },
-    "slug": {
+    "date": {
+      "type": "date"
+    },
+    "time": {
       "type": "string"
     }
   }
