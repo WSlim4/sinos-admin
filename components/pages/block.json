@@ -16,9 +16,6 @@
     },
     "grid": {
       "type": "boolean"
-    },
-    "list": {
-      "type": "boolean"
     }
   }
 }
