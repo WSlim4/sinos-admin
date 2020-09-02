@@ -5,4 +5,9 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+
+findOne: ctx => {
+        return strapi.query('page-builder').findOne({ page_id : ctx.params.id });
+    },
+};

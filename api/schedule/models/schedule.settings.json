@@ -13,8 +13,11 @@
       "type": "string"
     },
     "events": {
-      "via": "schedule",
-      "collection": "event"
+      "collection": "event",
+      "via": "schedule"
+    },
+    "date": {
+      "type": "date"
     }
   }
 }

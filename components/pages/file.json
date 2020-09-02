@@ -7,17 +7,19 @@
   "options": {},
   "attributes": {
     "File": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false
     },
     "Caption": {
+      "type": "string"
+    },
+    "url": {
       "type": "string"
     }
   }

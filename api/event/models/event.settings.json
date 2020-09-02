@@ -16,8 +16,8 @@
       "type": "text"
     },
     "schedule": {
-      "model": "schedule",
-      "via": "events"
+      "via": "events",
+      "model": "schedule"
     },
     "projeto": {
       "model": "projeto"
