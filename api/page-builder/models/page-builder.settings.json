@@ -9,9 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "Meta": {
       "type": "component",
       "repeatable": true,
@@ -23,10 +20,14 @@
     "page_text": {
       "type": "richtext"
     },
-    "File": {
-      "type": "component",
-      "repeatable": true,
-      "component": "pages.file"
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "pages.cover",
+        "pages.file",
+        "pages.block",
+        "pages.embed"
+      ]
     }
   }
 }

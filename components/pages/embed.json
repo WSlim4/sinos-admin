@@ -1,12 +1,12 @@
 {
-  "collectionName": "components_nested_slides",
+  "collectionName": "components_pages_embeds",
   "info": {
-    "name": "Slide",
-    "icon": "caret-right"
+    "name": "Embed",
+    "icon": "clone"
   },
   "options": {},
   "attributes": {
-    "Picture": {
+    "Video": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -16,9 +16,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "Link": {
-      "type": "string"
     }
   }
 }

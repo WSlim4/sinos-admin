@@ -1,12 +1,12 @@
 {
-  "collectionName": "components_nested_slides",
+  "collectionName": "components_pages_covers",
   "info": {
-    "name": "Slide",
-    "icon": "caret-right"
+    "name": "Cover",
+    "icon": "scroll"
   },
   "options": {},
   "attributes": {
-    "Picture": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -16,9 +16,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "Link": {
-      "type": "string"
     }
   }
 }
