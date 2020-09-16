@@ -24,12 +24,15 @@
       "required": false
     },
     "projeto": {
-      "via": "categorias",
-      "model": "projeto"
+      "model": "projeto",
+      "via": "categorias"
     },
     "cursos": {
       "via": "categoria",
       "collection": "curso"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

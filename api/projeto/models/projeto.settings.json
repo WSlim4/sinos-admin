@@ -22,8 +22,8 @@
       "type": "text"
     },
     "categorias": {
-      "collection": "categoria",
-      "via": "projeto"
+      "via": "projeto",
+      "collection": "categoria"
     },
     "slug": {
       "type": "string"

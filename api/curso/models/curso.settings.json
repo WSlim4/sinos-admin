@@ -13,12 +13,15 @@
       "type": "string"
     },
     "aulas": {
-      "via": "curso",
-      "collection": "aula"
+      "collection": "aula",
+      "via": "curso"
     },
     "categoria": {
       "model": "categoria",
       "via": "cursos"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

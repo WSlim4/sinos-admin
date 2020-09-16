@@ -19,8 +19,8 @@
       "type": "string"
     },
     "curso": {
-      "model": "curso",
-      "via": "aulas"
+      "via": "aulas",
+      "model": "curso"
     },
     "professore": {
       "model": "professore",

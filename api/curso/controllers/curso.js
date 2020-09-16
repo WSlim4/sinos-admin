@@ -5,4 +5,8 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+    findOne: async (ctx) => {
+        return await strapi.query('curso').findOne({slug: ctx.params.id }, ['curso.aulas']);
+    }
+};

@@ -9,4 +9,7 @@ module.exports = {
   find: ctx => {
     return strapi.query('projeto').find(ctx.query, ['categorias', 'categorias.image', 'categorias.cursos', 'categorias.cursos.aulas']);
   },
+  findOne: ctx => {
+    return strapi.query('projeto').findOne({slug: ctx.params.id}, ['categorias', 'categorias.image', 'categorias.cursos', 'categorias.cursos.aulas']);
+  },
 };

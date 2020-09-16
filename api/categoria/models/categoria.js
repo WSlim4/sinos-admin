@@ -5,8 +5,17 @@
  * to customize this model
  */
 
+const slugify = require('slugify');
+
 module.exports = {
-    findOne: async (ctx) => {
-        return await strapi.query('categoria').findOne({ id: ctx.id }, ['categorias', 'categorias.cursos', 'categorias.cursos.aulas']);
+  lifecycles: {
+    beforeCreate: async (data) => {
+      if (data.title) {
+        data.slug = slugify(data.title);
       }
+    },
+    beforeUpdate: async (params, data) => {
+      data.slug = slugify(data.title);
+    },
+  },
 };
