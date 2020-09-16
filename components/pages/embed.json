@@ -6,16 +6,8 @@
   },
   "options": {},
   "attributes": {
-    "Video": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "video_url": {
+      "type": "string"
     }
   }
 }

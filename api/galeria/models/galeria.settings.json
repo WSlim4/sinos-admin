@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galerias",
+  "info": {
+    "name": "Galeria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "depoimento": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}
