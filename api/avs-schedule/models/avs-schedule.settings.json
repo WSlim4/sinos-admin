@@ -20,10 +20,6 @@
     "projeto": {
       "via": "avs_schedules",
       "model": "projeto"
-    },
-    "avs_events": {
-      "collection": "avs-event",
-      "via": "avs_schedule"
     }
   }
 }
