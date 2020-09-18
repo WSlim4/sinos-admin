@@ -5,8 +5,7 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.db'),
-        timezone: 'UTC-3'
+        filename: env('DATABASE_FILENAME', '.tmp/data.db')
       },
       options: {
         useNullAsDefault: true,

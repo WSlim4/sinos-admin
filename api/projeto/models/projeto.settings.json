@@ -22,10 +22,28 @@
       "type": "text"
     },
     "categorias": {
-      "via": "projeto",
-      "collection": "categoria"
+      "collection": "categoria",
+      "via": "projeto"
     },
     "slug": {
+      "type": "string"
+    },
+    "avs_schedules": {
+      "collection": "avs-schedule",
+      "via": "projeto"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "form_link": {
       "type": "string"
     }
   }

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avs_events",
+  "info": {
+    "name": "AVS Event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "time": {
+      "type": "string"
+    },
+    "avs_schedule": {
+      "via": "avs_events",
+      "model": "avs-schedule"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

@@ -1,18 +1,15 @@
 {
   "kind": "collectionType",
-  "collectionName": "categorias",
+  "collectionName": "academia_virtuals",
   "info": {
-    "name": "categoria"
+    "name": "Academia virtual"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "image": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,13 +20,17 @@
       "plugin": "upload",
       "required": false
     },
-    "projeto": {
-      "via": "categorias",
-      "model": "projeto"
+    "description": {
+      "type": "text"
     },
-    "cursos": {
-      "via": "categoria",
-      "collection": "curso"
+    "color": {
+      "type": "string"
+    },
+    "projetos": {
+      "collection": "projeto"
+    },
+    "title": {
+      "type": "string"
     },
     "slug": {
       "type": "string"

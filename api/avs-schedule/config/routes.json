@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/avs-schedules",
+      "handler": "avs-schedule.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avs-schedules/count",
+      "handler": "avs-schedule.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avs-schedules/:id",
+      "handler": "avs-schedule.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/avs-schedules",
+      "handler": "avs-schedule.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/avs-schedules/:id",
+      "handler": "avs-schedule.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/avs-schedules/:id",
+      "handler": "avs-schedule.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

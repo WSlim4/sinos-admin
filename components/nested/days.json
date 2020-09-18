@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_nested_days",
+  "info": {
+    "name": "Days",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "time": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

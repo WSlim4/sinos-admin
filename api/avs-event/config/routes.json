@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/avs-events",
+      "handler": "avs-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avs-events/count",
+      "handler": "avs-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avs-events/:id",
+      "handler": "avs-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/avs-events",
+      "handler": "avs-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/avs-events/:id",
+      "handler": "avs-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/avs-events/:id",
+      "handler": "avs-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avs_schedules",
+  "info": {
+    "name": "AVS Schedule"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "month": {
+      "type": "string"
+    },
+    "Days": {
+      "type": "component",
+      "repeatable": true,
+      "component": "nested.days"
+    },
+    "projeto": {
+      "via": "avs_schedules",
+      "model": "projeto"
+    },
+    "avs_events": {
+      "collection": "avs-event",
+      "via": "avs_schedule"
+    }
+  }
+}

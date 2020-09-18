@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/academia-virtuals",
+      "handler": "academia-virtual.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/academia-virtuals/count",
+      "handler": "academia-virtual.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/academia-virtuals/:id",
+      "handler": "academia-virtual.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/academia-virtuals",
+      "handler": "academia-virtual.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/academia-virtuals/:id",
+      "handler": "academia-virtual.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/academia-virtuals/:id",
+      "handler": "academia-virtual.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
