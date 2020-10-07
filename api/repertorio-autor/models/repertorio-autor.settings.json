@@ -1,19 +1,22 @@
 {
   "kind": "collectionType",
-  "collectionName": "professores",
+  "collectionName": "repertorio_autors",
   "info": {
-    "name": "Professore"
+    "name": "RepertorioAutor"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "nome": {
       "type": "string"
     },
+    "repertorio_obra": {
+      "model": "repertorio-obra"
+    },
     "bio": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

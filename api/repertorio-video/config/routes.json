@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/repertorio-videos",
+      "handler": "repertorio-video.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/repertorio-videos/count",
+      "handler": "repertorio-video.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/repertorio-videos/:id",
+      "handler": "repertorio-video.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/repertorio-videos",
+      "handler": "repertorio-video.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/repertorio-videos/:id",
+      "handler": "repertorio-video.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/repertorio-videos/:id",
+      "handler": "repertorio-video.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

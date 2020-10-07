@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/repertorio-autors",
+      "handler": "repertorio-autor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/repertorio-autors/count",
+      "handler": "repertorio-autor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/repertorio-autors/:id",
+      "handler": "repertorio-autor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/repertorio-autors",
+      "handler": "repertorio-autor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/repertorio-autors/:id",
+      "handler": "repertorio-autor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/repertorio-autors/:id",
+      "handler": "repertorio-autor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

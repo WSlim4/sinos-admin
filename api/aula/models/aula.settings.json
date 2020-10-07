@@ -22,10 +22,6 @@
       "via": "aulas",
       "model": "curso"
     },
-    "professore": {
-      "model": "professore",
-      "via": "aulas"
-    },
     "date": {
       "type": "datetime"
     }

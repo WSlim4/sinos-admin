@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "repertorio_obras",
+  "info": {
+    "name": "RepertorioObra"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "dificuldade": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "partitura": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "repertorio_videos": {
+      "collection": "repertorio-video"
+    },
+    "minutagem": {
+      "type": "string"
+    }
+  }
+}

@@ -1,19 +1,22 @@
 {
   "kind": "collectionType",
-  "collectionName": "professores",
+  "collectionName": "repertorio_videos",
   "info": {
-    "name": "Professore"
+    "name": "RepertorioVideo"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "bio": {
-      "type": "text"
+    "url": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
     }
   }
 }

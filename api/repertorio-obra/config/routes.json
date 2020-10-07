@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/repertorio-obras",
+      "handler": "repertorio-obra.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/repertorio-obras/count",
+      "handler": "repertorio-obra.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/repertorio-obras/:id",
+      "handler": "repertorio-obra.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/repertorio-obras",
+      "handler": "repertorio-obra.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/repertorio-obras/:id",
+      "handler": "repertorio-obra.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/repertorio-obras/:id",
+      "handler": "repertorio-obra.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
