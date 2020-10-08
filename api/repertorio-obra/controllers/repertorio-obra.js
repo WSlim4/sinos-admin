@@ -7,9 +7,9 @@
 
 module.exports = {
     find: ctx => {
-        return strapi.query('repertorio-obra').find(ctx.query, ['repertorio_autor', 'repertorio_video']);
+        return strapi.query('repertorio-obra').find(ctx.query, ['repertorio-autor', 'repertorio-video']);
       },
     findOne: ctx => {
-        return strapi.query('repertorio-obra').findOne({id: ctx.params.id}, ['repertorio_obra, repertorio_video']);
+        return strapi.query('repertorio-obra').findOne({id: ctx.params.id}, ['repertorio-video']);
       },
 };
