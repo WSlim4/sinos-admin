@@ -7,6 +7,6 @@
 
 module.exports = {
     find: ctx => {
-        return strapi.query('repertorio-sinos').find(ctx.query, ['repertorio-obra.repertorio-autor', 'repertorio-obra.repertorio-video']);
+        return strapi.query('repertorio-sinos').find(ctx.query, [' repertorio-sinos', 'cover', 'repertorio-obra', 'repertorio-obra.repertorio-autor', 'repertorio-obra.repertorio-video']);
       },
 };
