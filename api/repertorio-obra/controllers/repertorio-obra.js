@@ -5,4 +5,11 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+    find: ctx => {
+        return strapi.query('repertorio-obra').find(ctx.query, ['repertorio_autor', 'repertorio_video']);
+      },
+    findOne: ctx => {
+        return strapi.query('repertorio-obra').findOne({id: ctx.params.id}, ['repertorio_obra, repertorio_video']);
+      },
+};
