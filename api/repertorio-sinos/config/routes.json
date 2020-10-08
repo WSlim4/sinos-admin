@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/repertorio-sinos",
+      "handler": "repertorio-sinos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/repertorio-sinos",
+      "handler": "repertorio-sinos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/repertorio-sinos",
+      "handler": "repertorio-sinos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

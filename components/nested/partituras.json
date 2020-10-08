@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_nested_partituras",
+  "info": {
+    "name": "partituras",
+    "icon": "capsules"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "partitura": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

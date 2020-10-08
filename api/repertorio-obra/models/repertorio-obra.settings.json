@@ -13,18 +13,9 @@
       "type": "string"
     },
     "dificuldade": {
-      "type": "integer",
+      "type": "decimal",
       "max": 5,
       "min": 1
-    },
-    "partitura": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files"
-      ],
-      "plugin": "upload",
-      "required": false
     },
     "date": {
       "type": "datetime"
@@ -34,6 +25,20 @@
     },
     "minutagem": {
       "type": "string"
+    },
+    "Partituras": {
+      "type": "component",
+      "repeatable": true,
+      "component": "nested.partituras"
+    },
+    "Instrumentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages.instrumento"
+    },
+    "repertorio_autor": {
+      "model": "repertorio-autor",
+      "via": "repertorio_obras"
     }
   }
 }

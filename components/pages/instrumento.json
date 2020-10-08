@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_pages_instrumentos",
+  "info": {
+    "name": "instrumento",
+    "icon": "square-full"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

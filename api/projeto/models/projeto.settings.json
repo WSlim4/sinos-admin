@@ -18,9 +18,6 @@
     "intro": {
       "type": "text"
     },
-    "description": {
-      "type": "text"
-    },
     "categorias": {
       "collection": "categoria",
       "via": "projeto"
@@ -45,6 +42,9 @@
     },
     "form_link": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

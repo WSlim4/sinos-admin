@@ -1,24 +1,24 @@
 {
-  "kind": "collectionType",
-  "collectionName": "professores",
+  "kind": "singleType",
+  "collectionName": "repertorio_sinos",
   "info": {
-    "name": "Professore"
+    "name": "RepertorioSinos"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "mini_bio": {
+    "intro": {
       "type": "text"
     },
-    "bio": {
+    "description": {
       "type": "richtext"
     },
-    "image": {
+    "repertorio_autors": {
+      "collection": "repertorio-autor"
+    },
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -29,13 +29,14 @@
       "plugin": "upload",
       "required": false
     },
-    "curso": {
-      "via": "professores",
-      "model": "curso"
+    "title": {
+      "type": "string"
     },
-    "aulas": {
-      "via": "professore",
-      "collection": "aula"
+    "color": {
+      "type": "string"
+    },
+    "repertorio_obras": {
+      "collection": "repertorio-obra"
     }
   }
 }

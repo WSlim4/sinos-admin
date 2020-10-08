@@ -17,6 +17,24 @@
     },
     "bio": {
       "type": "richtext"
+    },
+    "mini_bio": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "repertorio_obras": {
+      "via": "repertorio_autor",
+      "collection": "repertorio-obra"
     }
   }
 }

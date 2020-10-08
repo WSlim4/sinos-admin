@@ -24,6 +24,10 @@
     },
     "date": {
       "type": "datetime"
+    },
+    "professore": {
+      "model": "professore",
+      "via": "aulas"
     }
   }
 }
